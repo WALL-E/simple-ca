@@ -130,3 +130,21 @@ Certificate:
          53:9f:b8:8d:2c:32:63:a4:48:31:ca:75:81:e7:41:fd:68:ce:
          7d:d9:05:4c
 ```
+
+## Index.html Format
+
+The index.txt file is an ascii file consisting of 6 (not 4) tab-separated 
+fields.  Some of those fields may be empty and might appear not to exist at 
+all.
+
+The 6 fields are:
+
+0)  Entry type.  May be "V" (valid), "R" (revoked) or "E" (expired).
+    Note that an expired may have the type "V" because the type has
+    not been updated.  'openssl ca updatedb' does such an update.
+1)  Expiration datetime.
+2)  Revokation datetime.  This is set for any entry of the type "R".
+3)  Serial number.
+4)  File name of the certificate.  This doesn't seem to be used,
+    ever, so it's always "unknown".
+5)  Certificate subject name.
