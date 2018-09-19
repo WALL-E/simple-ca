@@ -4,13 +4,16 @@ Using shell script to create CA services
 ## OpenSSL
 
 1. default config 
-/etc/pki/tls/openssl.cnf
+
+    /etc/pki/tls/openssl.cnf
 
 2. serial number
-/etc/pki/CA/serial
+
+    /etc/pki/CA/serial
 
 3. database
-/etc/pki/CA/index.txt
+
+    /etc/pki/CA/index.txt
 
 
 ## Quick start
