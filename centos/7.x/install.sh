@@ -2,9 +2,9 @@
 set -x
 set -e
 
-wget https://www.openssl.org/source/openssl-1.1.0f.tar.gz
-tar zxvf openssl-1.1.0f.tar.gz
-cd openssl-1.1.0f
+wget https://www.openssl.org/source/openssl-1.1.1.tar.gz
+tar zxvf openssl-1.1.1.tar.gz
+cd openssl-1.1.1
 ./config
 sudo make
 sudo make install
