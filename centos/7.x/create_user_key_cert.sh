@@ -16,7 +16,7 @@ sudo /usr/local/bin/openssl pkey -in $PRI -outform PEM -pubout -out $PUB
 sudo /usr/local/bin/openssl req -new \
 -days 3650 \
 -key $PRI \
--out $CRT \
+-out $CSR \
 -subj /C=CN/ST=BJ/O=Company.Ltd/OU=QOS/CN=QOS$SERIAL/emailAddress=owner@QOS$SERIAL.QOS \
 -config /etc/pki/tls/openssl.cnf
 
