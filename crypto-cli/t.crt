@@ -1,0 +1,44 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1 (0x1)
+        Signature Algorithm: ED25519
+        Issuer: C=CN, ST=BeiJing, L=BeiJing, O=Default Company Ltd, OU=QOS
+        Validity
+            Not Before: Sep 28 09:07:03 2018 GMT
+            Not After : Sep 28 09:07:03 2019 GMT
+        Subject: C=CN, ST=BJ, O=Company.Ltd, OU=QOS, CN=QOS01
+        Subject Public Key Info:
+            Public Key Algorithm: ED25519
+                ED25519 Public-Key:
+                pub:
+                    bd:d5:a6:6e:2d:62:98:6c:2b:6d:5e:e1:c2:db:2d:
+                    09:27:69:af:05:ba:a6:ce:ee:01:52:16:71:9f:32:
+                    ed:7c
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier: 
+                92:46:BC:36:ED:D8:4D:BA:0E:A7:13:9C:04:65:17:D5:E1:F1:D2:9F
+            X509v3 Authority Key Identifier: 
+                keyid:60:3D:59:3C:7F:E9:DF:A8:87:9D:EC:A4:16:BA:D5:77:72:79:39:60
+
+    Signature Algorithm: ED25519
+         53:18:64:d7:48:4b:55:73:a9:39:92:f3:81:5b:c3:83:d5:8d:
+         fa:6a:05:f8:5e:97:3a:95:be:f8:23:13:b3:df:c0:40:90:88:
+         b7:e3:95:ce:86:99:17:f1:1f:bb:82:ff:d0:ef:26:b4:17:41:
+         cd:f4:98:04:5a:67:dd:ff:53:00
+-----BEGIN CERTIFICATE-----
+MIIB1TCCAYegAwIBAgIBATAFBgMrZXAwXTELMAkGA1UEBhMCQ04xEDAOBgNVBAgM
+B0JlaUppbmcxEDAOBgNVBAcMB0JlaUppbmcxHDAaBgNVBAoME0RlZmF1bHQgQ29t
+cGFueSBMdGQxDDAKBgNVBAsMA1FPUzAeFw0xODA5MjgwOTA3MDNaFw0xOTA5Mjgw
+OTA3MDNaME4xCzAJBgNVBAYTAkNOMQswCQYDVQQIDAJCSjEUMBIGA1UECgwLQ29t
+cGFueS5MdGQxDDAKBgNVBAsMA1FPUzEOMAwGA1UEAwwFUU9TMDEwKjAFBgMrZXAD
+IQC91aZuLWKYbCttXuHC2y0JJ2mvBbqmzu4BUhZxnzLtfKN7MHkwCQYDVR0TBAIw
+ADAsBglghkgBhvhCAQ0EHxYdT3BlblNTTCBHZW5lcmF0ZWQgQ2VydGlmaWNhdGUw
+HQYDVR0OBBYEFJJGvDbt2E26DqcTnARlF9Xh8dKfMB8GA1UdIwQYMBaAFGA9WTx/
+6d+oh53spBa61XdyeTlgMAUGAytlcANBAFMYZNdIS1VzqTmS84Fbw4PVjfpqBfhe
+lzqVvvgjE7PfwECQiLfjlc6GmRfxH7uC/9DvJrQXQc30mARaZ93/UwA=
+-----END CERTIFICATE-----
