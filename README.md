@@ -153,5 +153,20 @@ The 6 fields are:
 ## Other
 
 ```
-ssh-keygen -t ed25519
+生成Ed25519私钥
+openssl genpkey -algorithm Ed25519 -outform PEM -out /tmp/pri.key
+
+生成Ed25519公钥
+openssl pkey -in /tmp/pri.key -outform PEM -pubout -out /tmp/pub.key
+
+查看公钥
+固定前缀：302a 3005 0603 2b65 7003 2100
+cat /tmp/pub.key | openssl base64 -d |xxd
+cat /tmp/pub.key | openssl base64 -d |tail -c +13|xxd
+
+查看私钥
+固定前缀：302e 0201 0030 0506 032b 6570 0422
+cat /tmp/pri.key | openssl base64 -d |xxd
+cat /tmp/pri.key | openssl base64 -d |tail -c +17|xxd
+
 ```
