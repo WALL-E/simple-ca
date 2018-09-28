@@ -148,3 +148,10 @@ The 6 fields are:
 4)  File name of the certificate.  This doesn't seem to be used,
     ever, so it's always "unknown".
 5)  Certificate subject name.
+
+
+## Other
+
+```
+ssh-keygen -t ed25519
+```
