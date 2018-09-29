@@ -10,7 +10,9 @@ import (
 
 func main() {
 
-	certPEMBlock, err := ioutil.ReadFile("t.crt")
+	certFile := "/tmp/t.crt"
+
+	certPEMBlock, err := ioutil.ReadFile(certFile)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -36,9 +38,21 @@ func main() {
 		}
 
 		fmt.Println("Certificate:")
+		fmt.Printf("\tVersion: %+v\n", cert.Version)
 		fmt.Printf("\tSubject: %+v\n", cert.Subject)
+		fmt.Printf("\tIssuer: %+v\n", cert.Issuer)
+		fmt.Printf("\tNotBefore: %+v\n", cert.NotBefore)
+		fmt.Printf("\tNotAfter: %+v\n", cert.NotAfter)
+
+		fmt.Printf("\tSerialNumber: %v\n", cert.SerialNumber)
 		fmt.Printf("\tDNS Names: %+v\n", cert.DNSNames)
 		fmt.Printf("\tEmailAddresses: %+v\n", cert.EmailAddresses)
 		fmt.Printf("\tIPAddresses: %+v\n", cert.IPAddresses)
+
+		fmt.Printf("\tPublicKeyAlgorithm: %+v\n", cert.PublicKeyAlgorithm)
+		fmt.Printf("\tSignatureAlgorithm: %+v\n", cert.SignatureAlgorithm)
+		fmt.Printf("\tKeyUsage: %+v\n", cert.KeyUsage)
+
+
 	}
 }
