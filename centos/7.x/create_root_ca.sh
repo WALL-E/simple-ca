@@ -17,4 +17,4 @@ sudo $OPENSSL pkey -in ./private/cakey.pem -outform PEM -pubout -out ./capub.key
 
 # sudo openssl req -new -days 3650 -key ./private/cakey.pem -out careq.pem -config /etc/pki/tls/openssl.cnf
 # sudo openssl ca -selfsign -in careq.pem -out ./private/cacert.pem -config /etc/pki/tls/openssl.cnf
-sudo $OPENSSL req -new -x509 -days 3650 -key ./private/cakey.pem -out ./cacert.pem -config /etc/pki/tls/openssl.cnf
+sudo $OPENSSL req -new -x509 -days 7 -key ./private/cakey.pem -out ./cacert.pem -config /etc/pki/tls/openssl.cnf
