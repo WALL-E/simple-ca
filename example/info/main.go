@@ -25,6 +25,7 @@ func main() {
 			break
 		}
 
+		fmt.Println("Certificate:", certDERBlock.Type)
 		if certDERBlock.Type == "CERTIFICATE" {
 			blocks = append(blocks, certDERBlock.Bytes)
 		}
