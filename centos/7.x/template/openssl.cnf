@@ -132,13 +132,13 @@ countryName_min			= 2
 countryName_max			= 2
 
 stateOrProvinceName		= State or Province Name (full name)
-stateOrProvinceName_default	= BeiJing
+stateOrProvinceName_default	= BJ
 
 localityName			= Locality Name (eg, city)
-localityName_default		= BeiJing
+localityName_default		= BJ
 
 0.organizationName		= Organization Name (eg, company)
-0.organizationName_default	= Default Company Ltd
+0.organizationName_default	= Company.Ltd
 
 # we can do this but it is not needed normally :-)
 #1.organizationName		= Second Organization Name (eg, company)
@@ -149,6 +149,7 @@ organizationalUnitName_default	= QOS
 
 commonName			= Common Name (eg, your name or your server\'s hostname)
 commonName_max			= 64
+commonName_default		= BASE
 
 emailAddress			= Email Address
 emailAddress_max		= 64
