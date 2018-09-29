@@ -17,7 +17,7 @@ sudo /usr/local/bin/openssl req -new \
 -days 7 \
 -key $PRI \
 -out $CSR \
--subj /C=CN/ST=BJ/O=Company.Ltd/OU=QOS/CN=QSC$SERIAL/emailAddress=owner@QSC$SERIAL.QOS \
+-subj /C=CN/ST=BJ/L=BJ/O=Company.Ltd/OU=QOS/CN=QSC$SERIAL/emailAddress=owner@QSC$SERIAL.QOS \
 -config /etc/pki/tls/openssl.cnf
 
 sudo /usr/local/bin/openssl ca -in $CSR -out $CRT -config /etc/pki/tls/openssl.cnf

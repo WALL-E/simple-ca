@@ -84,6 +84,7 @@ policy		= policy_match
 [ policy_match ]
 countryName		= match
 stateOrProvinceName	= optional
+localityName		= optional
 organizationName	= optional
 organizationalUnitName	= optional
 commonName		= supplied
