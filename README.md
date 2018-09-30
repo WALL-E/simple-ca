@@ -16,7 +16,6 @@ Using shell script to create CA services
 
     /etc/pki/CA/index.txt
 
-
 ## Quick start
 
 ```
